@@ -64,3 +64,44 @@ button.cancel {
   border: 1px solid #ddd;
   color: royalblue;
 }
+
+/* start my code */
+
+.modal {
+  margin: 100px;
+  padding: 20px;
+  display: flex;
+  
+  justify-content: space-around;
+  gap: 20px;
+}
+
+.icon {
+  flex: 0 0 auto;
+
+  /* !!! needs equal space
+  on either side of the icon */ 
+}
+
+.header {
+  font-weight: bold;
+  font-size: large;
+}
+
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.text {
+  margin-bottom: 10px;
+}
+
+/* !! works without this? 
+
+.right {
+  display: flex;
+  flex-direction: column;
+} */
