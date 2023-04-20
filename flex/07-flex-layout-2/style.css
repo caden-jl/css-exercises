@@ -17,7 +17,7 @@ body {
 }
 
 .sidebar {
-  width: 300px;
+  min-width: 300px; /* added min */
   background: royalblue;
   box-sizing: border-box;
 }
@@ -26,4 +26,72 @@ body {
   border: 1px solid #eee;
   box-shadow: 2px 4px 16px rgba(0,0,0,.06);
   border-radius: 4px;
+}
+
+/* start my code */
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; /* these help shift links top left */
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+/* noticias para caden del futuro: 
+crear un clase .cards - entonces, poner todos .card en flex container
+.cards 
+y luego, ..... no se c: */
+
+li {
+  margin-bottom: 16px; /* pay attention to detail! */
+}
+
+.header { 
+  font-size: 32px;
+  font-weight: 900;
+  padding: 16px;
+  display: flex;
+  align-items: center;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  display: flex;
+  flex: 1; /* flex: 1 1 0 because flex: <positive-number> 1 0 */
+}
+
+.sidebar {
+  /* added min to width */
+  font-size: 24px;
+  padding: 16px;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  padding: 32px;
+}
+
+.card {
+  /* min-width: 100px;
+  min-height: 100px;
+  max-width: 400px;
+  max-height: 600px; */
+  width: 300px;
+  padding: 16px;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
